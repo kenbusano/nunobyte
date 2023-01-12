@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <header className="relative mb-16">
-            <aside className="fixed top-0 right-0 left-0 flex justify-between items-center lg:container lg:mx-auto sm:p-2 md:p-4">
+        <header className="fixed top-0 right-0 left-0 sm:bg-red-700 lg:bg-transparent z-30">
+            <aside className="flex justify-between items-center lg:container lg:mx-auto sm:p-2 md:p-4">
                 <div id="logo">
                     <Image 
                         src={"./nunobyte.svg"} 

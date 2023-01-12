@@ -1,5 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme")
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -14,6 +12,7 @@ module.exports = {
       colors: {
         'default': '#830B53',
         'aroma': '#331352',
+        'art': '#100F45',
       },
     },
     screens: {

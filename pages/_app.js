@@ -11,6 +11,10 @@ const nunofont = DM_Sans({
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        {/* all SEO starters must be here 💛 */}
+        <title>nunobyte</title>
+      </Head>
       <main className={nunofont.className}>
         <Component {...pageProps} />
       </main>
