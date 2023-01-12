@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Status from "./Status"
 
 export default function Welcome() {
     return (
@@ -50,6 +51,7 @@ export default function Welcome() {
                 />
             </aside>
         </section>
+        <Status />
     </>
     )
 }
