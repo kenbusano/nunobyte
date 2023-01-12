@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,7 +7,21 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'primetime': ['Primetime', 'sans-serif'], //local font
+      },
+      colors: {
+        'default': '#830B53',
+        'aroma': '#331352',
+      },
+    },
+    screens: {
+      sm: '320px',
+      md: '640px',
+      lg: '1020px',
+      xl: '1280px',
+    },
   },
   plugins: [],
 };

@@ -1,10 +1,9 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-
-// const inter = Inter({ subsets: ['latin'] })
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className='text-3xl font-bold'>test me</div>
+    <>
+      <Navbar />
+    </>
   )
 }

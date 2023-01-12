@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add some custom fonts 💛 */
+
+@font-face {
+    font-family: 'Primetime';
+    src: url('./fonts/primetime.ttf');
+}
