@@ -3,7 +3,7 @@ export default function Game() {
         <section className="fixed top-0 left-0 right-0 sm:p-4 md:p-0">
             <aside className="flex items-center justify-center h-screen text-center">
                 <main className="bg-white p-6 rounded-lg">
-                    <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center justify-between sm:mb-2 lg:mb-6">
                         <header id="question-number" className="">
                             <h2 className="lg:text-3xl font-bold">Question #1</h2>
                         </header>
@@ -15,7 +15,7 @@ export default function Game() {
                         </div>
                     </div>
                     <div id="question" className="">
-                        <span className="lg:w-[30rem] sm:w-[240px] md:w-full sm:mx-auto break-words block lg:mx-auto lg:text-2xl mb-4">asuhfshuffhudsfsujuafjudsfjdsjfudssdjfusdfdsufsdufs</span>
+                        <span className="lg:w-[30rem] sm:w-[240px] md:w-full sm:mx-auto break-words block lg:mx-auto lg:text-2xl sm:mb-2 lg:mb-4">test question</span>
                     </div>
                     <div id="multiple-choice" className="grid grid-cols-1 gap-2 text-white">
                         <button className="bg-[#A725BC] sm:p-2 lg:p-3 rounded-lg">01</button>
