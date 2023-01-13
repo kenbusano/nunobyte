@@ -15,7 +15,13 @@ export default function Game() {
                         </div>
                     </div>
                     <div id="question" className="">
-                        <span className="lg:w-[30rem] block lg:mx-auto text-2xl">What is the root number of 19?</span>
+                        <span className="lg:w-[30rem] sm:w-[240px] md:w-full sm:mx-auto break-words block lg:mx-auto lg:text-2xl mb-4">asuhfshuffhudsfsujuafjudsfjdsjfudssdjfusdfdsufsdufs</span>
+                    </div>
+                    <div id="multiple-choice" className="grid grid-cols-1 gap-2 text-white">
+                        <button className="bg-[#A725BC] sm:p-2 lg:p-3 rounded-lg">01</button>
+                        <button className="bg-[#DE1B9C] sm:p-2 lg:p-3 rounded-lg">02</button>
+                        <button className="bg-[#AC631F] sm:p-2 lg:p-3 rounded-lg">03</button>
+                        <button className="bg-[#BB2A44] sm:p-2 lg:p-3 rounded-lg">04</button>
                     </div>
                 </main>
             </aside>
