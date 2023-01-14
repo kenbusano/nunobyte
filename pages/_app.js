@@ -6,6 +6,7 @@ import Head from 'next/head'
 const nunofont = DM_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
+  preload: true //very needed to control loadings.
 })
 
 export default function App({ Component, pageProps }) {
