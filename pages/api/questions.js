@@ -1,9 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-// export default function handler(req, res) {
-//   res.status(200).json({ name: 'John Doe' })
-// }
-
 export const questions = [
   {
     questionText: 'What is the capital of France?',
@@ -41,4 +35,4 @@ export const questions = [
       { answerText: '7', isCorrect: true },
     ],
   },
-]
+];

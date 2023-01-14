@@ -8,7 +8,7 @@ export default function Option() {
                     <BsVolumeUpFill />
                 </button>
                 <div id="latest-version" className="text-2xl uppercase">
-                    <span>Version: 0.5.0</span>
+                    <span>Version: 0.5.0 (Beta)</span>
                 </div>
             </div>
         </div>
