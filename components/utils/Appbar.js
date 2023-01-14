@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { questions } from "../../pages/api/questions";
 
 export default function Appbar() {
     return (
@@ -15,9 +16,9 @@ export default function Appbar() {
             </div>
             <div id="game-routes">
                 <span className="lg:text-xl text-white uppercase">
-                    {`Score: 0/20`}
+                    {`Score: 0/${questions.length}`}
                 </span>
-            </div>
+            </div>   
         </aside>
     </header>
     )
