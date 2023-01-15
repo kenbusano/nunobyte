@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { questions } from "../../pages/api/questions"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Game() {
     const [current, setCurrent] = useState(0)
@@ -21,7 +22,7 @@ export default function Game() {
     
     return (
     <>
-        <header className="relative z-30">
+        <header className="relative">
             <aside className="flex justify-between items-center lg:container lg:mx-auto sm:p-2 md:p-4">
                 <div id="logo">
                     <Image 
@@ -41,13 +42,28 @@ export default function Game() {
         </header>
         <section className="fixed top-0 left-0 right-0 sm:p-4 md:p-0">
             <aside className="flex items-center justify-center h-screen text-center">
-                <main className="bg-white p-6 rounded-lg">
+                <>
                     {showScore ? (
-                        <div>
-                            ty for playing
+                        <div className="fixed top-0 left-0 right-0 z-50 w-full p-4 grid h-screen place-items-center bg-black">
+                            <div className="relative text-center">
+                                <div className=" text-white">
+                                    <div className="p-12 space-y-2">
+                                        <Image 
+                                            src={"./nuno-logo.svg"}
+                                            alt="" 
+                                            width={1920} 
+                                            height={1080}
+                                            className="mb-4 w-32 mx-auto"
+                                        />
+                                        <span>{`Score: ${score}/${questions.length}`}</span>
+                                        <h2 className="font-bold text-2xl">That's all so thank you!</h2>
+                                        <button className="bg-white text-black p-4 px-12 rounded-lg" onClick={() => window.location.reload()}>Play again?</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     ): (
-                        <>
+                        <main className="bg-white p-6 rounded-lg">
                             <div className="flex items-center justify-between sm:mb-2 lg:mb-6">
                                 <header id="question-number" className="">
                                     <h2 className="lg:text-3xl font-bold">Question {current + 1}</h2>
@@ -67,9 +83,9 @@ export default function Game() {
                                     <button className="inline-block sm:p-2 lg:p-3 bg-[#A725BC] text-white leading-tight uppercase rounded-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" onClick={() => handleAnswer(ansOption.isCorrect)}>{ansOption.answerText}</button>
                                 ))}
                             </div>
-                        </>
+                        </main>
                     )}
-                </main>
+                </>
             </aside>
         </section>
     </>
