@@ -4,8 +4,8 @@ import Image from "next/image"
 
 export default function Game() {
     const [current, setCurrent] = useState(0)
-    const [score, setScore] = useState(0)
     const [showScore, setShowScore] = useState(false);
+    const [score, setScore] = useState(0)
 
     const handleAnswer = (isCorrect) => {
         if (isCorrect) {
