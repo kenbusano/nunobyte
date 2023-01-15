@@ -79,8 +79,8 @@ export default function Game() {
                                 <span className="lg:w-[30rem] sm:w-[240px] md:w-full sm:mx-auto break-words block lg:mx-auto lg:text-2xl sm:mb-2 lg:mb-4">{questions[current].questionText}</span>
                             </div>
                             <div id="multiple-choice" className="grid grid-cols-1 sm:gap-2 lg:gap-4 text-white">
-                                {questions[current].answerOptions.map((ansOption) => (
-                                    <button className="inline-block sm:p-2 lg:p-3 bg-[#A725BC] text-white leading-tight uppercase rounded-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" onClick={() => handleAnswer(ansOption.isCorrect)}>{ansOption.answerText}</button>
+                                {questions[current].answerOptions.map((ansOption, index) => (
+                                    <button key={index} className="inline-block sm:p-2 lg:p-3 bg-[#A725BC] text-white leading-tight uppercase rounded-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" onClick={() => handleAnswer(ansOption.isCorrect)}>{ansOption.answerText}</button>
                                 ))}
                             </div>
                         </main>
