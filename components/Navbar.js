@@ -1,6 +1,9 @@
 import Image from "next/image"
+import { useRouter } from "next/router"
 
 export default function Navbar() {
+    const router = useRouter()
+
     return (
         <header className="fixed top-0 right-0 left-0 sm:bg-red-700 lg:bg-transparent z-30">
             <aside className="flex justify-between items-center lg:container lg:mx-auto sm:p-2 md:p-4">
@@ -14,7 +17,7 @@ export default function Navbar() {
                     />
                 </div>
                 <div id="game-routes">
-                    <button className="bg-aroma sm:p-2 md:p-4 lg:p-4 lg:px-8 lg:text-xl text-white sm:rounded-lg lg:rounded-xl">
+                    <button className="bg-aroma sm:p-2 md:p-4 lg:p-4 lg:px-8 lg:text-xl text-white sm:rounded-lg lg:rounded-xl" onClick={() => router.push("/app")}>
                         Play Game
                     </button>
                 </div>
