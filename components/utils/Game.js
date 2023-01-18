@@ -69,15 +69,10 @@ export default function Game() {
                     ): (
                         <main className="bg-white rounded-lg">
                             {response}
-                            <div className="flex items-center justify-between sm:mb-2 p-4">
+                            <div className="text-center sm:mb-2 p-4">
                                 <header id="question-number" className="">
                                     <h2 className="lg:text-3xl font-bold">Question {current + 1}</h2>
                                 </header>
-                                <div id="toggle-switch">
-                                    <label className="relative inline-flex items-center cursor-pointer">
-                                    <input type="checkbox" value="" className="sr-only peer" />
-                                    </label>
-                                </div>
                             </div>
                             <div id="question" className="">
                                 <span className="lg:w-[30rem] sm:w-[240px] md:w-full sm:mx-auto break-words block lg:mx-auto lg:text-2xl">{questions[current].questionText}</span>
