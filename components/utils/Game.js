@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { questions } from "../../pages/api/questions"
 import Image from "next/image"
-import Link from "next/link"
+import { wrongAnswer, correctAnswer } from "../../pages/api/conditions"
 
 export default function Game() {
     const [current, setCurrent] = useState(0)
@@ -12,9 +12,9 @@ export default function Game() {
     const handleAnswer = (isCorrect) => {
         if (isCorrect) {
             setScore(score + 1)
-            setResponse("potanginamo")
+            setResponse(correctAnswer())
         } else {
-            setResponse("ambobo")
+            setResponse(wrongAnswer())
         }
         const nextQuestion = current + 1;
 		if (nextQuestion < questions.length) {
@@ -67,8 +67,9 @@ export default function Game() {
                             </div>
                         </div>
                     ): (
-                        <main className="bg-white p-6 rounded-lg">
-                            <div className="flex items-center justify-between sm:mb-2 lg:mb-6">
+                        <main className="bg-white rounded-lg">
+                            {response}
+                            <div className="flex items-center justify-between sm:mb-2 p-4">
                                 <header id="question-number" className="">
                                     <h2 className="lg:text-3xl font-bold">Question {current + 1}</h2>
                                 </header>
@@ -79,11 +80,10 @@ export default function Game() {
                                     </label>
                                 </div>
                             </div>
-                            {/* <div>{response}</div> */}
                             <div id="question" className="">
-                                <span className="lg:w-[30rem] sm:w-[240px] md:w-full sm:mx-auto break-words block lg:mx-auto lg:text-2xl sm:mb-2 lg:mb-4">{questions[current].questionText}</span>
+                                <span className="lg:w-[30rem] sm:w-[240px] md:w-full sm:mx-auto break-words block lg:mx-auto lg:text-2xl">{questions[current].questionText}</span>
                             </div>
-                            <div id="multiple-choice" className="grid grid-cols-1 sm:gap-2 lg:gap-4 text-white">
+                            <div id="multiple-choice" className="grid grid-cols-1 sm:gap-2 lg:gap-4 text-white p-6">
                                 {questions[current].answerOptions.map((ansOption, index) => (
                                     <button key={index} className={`inline-block sm:p-2 lg:p-3 bg-[#A725BC] text-white leading-tight uppercase rounded-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out`} onClick={() => handleAnswer(ansOption.isCorrect)}>{ansOption.answerText}</button>
                                 ))}
