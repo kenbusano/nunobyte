@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="74aa70f6-ad31-423c-80fa-3dbb5a78065b" name="Changes" comment="webstorm IDE fan :heart:">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="74aa70f6-ad31-423c-80fa-3dbb5a78065b" name="Changes" comment="keep changing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674214184065</updated>
-      <workItem from="1674214187199" duration="338000" />
+      <workItem from="1674214187199" duration="1093000" />
     </task>
     <task id="LOCAL-00001" summary="webstorm IDE fan :heart:">
       <created>1674214359931</created>
@@ -47,7 +51,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674214359931</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="webstorm IDE fan :heart:">
+      <created>1674214584672</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674214584672</updated>
+    </task>
+    <task id="LOCAL-00003" summary="keep changing">
+      <created>1674214600823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674214600823</updated>
+    </task>
+    <task id="LOCAL-00004" summary="keep changing">
+      <created>1674214648552</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674214648552</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -55,6 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="webstorm IDE fan :heart:" />
-    <option name="LAST_COMMIT_MESSAGE" value="webstorm IDE fan :heart:" />
+    <MESSAGE value="keep changing" />
+    <option name="LAST_COMMIT_MESSAGE" value="keep changing" />
   </component>
 </project>
