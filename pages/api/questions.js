@@ -35,4 +35,13 @@ export const questions = [
       { answerText: '7', isCorrect: true },
     ],
   },
+  {
+    questionText: 'How many Lucifer series does season have?',
+    answerOptions: [
+      { answerText: '6', isCorrect: true },
+      { answerText: '4', isCorrect: false },
+      { answerText: '5', isCorrect: false },
+      { answerText: '2', isCorrect: false },
+    ],
+  },
 ];
