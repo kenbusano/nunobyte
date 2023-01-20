@@ -14,15 +14,15 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
           {/* Open Graph on Facebook */}
-          <meta property="og:url" content="" />
+          <meta property="og:url" content="https://nunobyte.vercel.app/" />
           <meta property="og:type" content="quiz game" />
           <meta property="og:title" content="Nunobyte" />
           <meta property="og:description" content="It's just a quiz game!" />
           <meta property="og:image" content="/night_fire_by_waltjan_dejibyo-pre.jpg" />
           {/* Twitter Card */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="twitter:domain" content="" />
-          <meta property="twitter:url" content="" />
+          <meta property="twitter:domain" content="nunobyte.vercel.app" />
+          <meta property="twitter:url" content="https://nunobyte.vercel.app/" />
           <meta name="twitter:title" content="Nunobyte" />
           <meta name="twitter:description" content="It's just a quiz game!" />
           <meta name="twitter:image" content="/night_fire_by_waltjan_dejibyo-pre.jpg" />

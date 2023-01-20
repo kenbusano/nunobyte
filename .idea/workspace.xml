@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74aa70f6-ad31-423c-80fa-3dbb5a78065b" name="Changes" comment="keep changing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-    </list>
+    <list default="true" id="74aa70f6-ad31-423c-80fa-3dbb5a78065b" name="Changes" comment="finalize" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +39,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674214184065</updated>
-      <workItem from="1674214187199" duration="1093000" />
+      <workItem from="1674214187199" duration="1495000" />
     </task>
     <task id="LOCAL-00001" summary="webstorm IDE fan :heart:">
       <created>1674214359931</created>
@@ -72,7 +69,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674214648552</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SEO added :rocket:">
+      <created>1674215434164</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674215434164</updated>
+    </task>
+    <task id="LOCAL-00006" summary="finalize">
+      <created>1674215446540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674215446540</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +92,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="webstorm IDE fan :heart:" />
     <MESSAGE value="keep changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="keep changing" />
+    <MESSAGE value="SEO added :rocket:" />
+    <MESSAGE value="finalize" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalize" />
   </component>
 </project>
