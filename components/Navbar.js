@@ -1,13 +1,14 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
-import { AnimatePresence, motion } from "framer-motion"
+// import { AnimatePresence, motion } from "framer-motion"
+
+//Animation adding soon 
 
 export default function Navbar() {
     const router = useRouter()
 
     return (
-        <AnimatePresence>
-            <header className="fixed top-0 right-0 left-0 sm:bg-red-700 lg:bg-transparent z-30">
+            <header className="fixed top-0 right-0 left-0 bg-purple-800 z-30">
                 <aside className="flex justify-between items-center lg:container lg:mx-auto sm:p-2 md:p-4">
                     <div id="logo">
                         <Image 
@@ -25,6 +26,5 @@ export default function Navbar() {
                     </div>
                 </aside>
             </header>
-        </AnimatePresence>
     )
 }
