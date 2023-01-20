@@ -34,7 +34,8 @@ export default function Game() {
                         width="0" 
                         height="0"
                         className="sm:w-32 lg:w-48"
-                        alt="Nuno logo" 
+                        alt="Nuno logo"
+                        priority={true}
                     />
                 </div>
                 <div id="game-routes">

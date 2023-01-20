@@ -15,7 +15,7 @@ export default function Navbar() {
                             width="0" 
                             height="0"
                             className="sm:w-32 lg:w-48"
-                            alt="Logo of Nuno" 
+                            alt="Logo of Nuno"
                         />
                     </div>
                     <div id="game-routes">
